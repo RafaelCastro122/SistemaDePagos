@@ -12,7 +12,7 @@ package com.mycompany.sistemadepagos;
         
         
         
-        public EmpleadoServicio(String nombre, String apellido, int dpi, double salarioBase, double ventasRealizadas, double porcentajeBono) {
+        public EmpleadoServicio(String nombre, String apellido, String dpi, double salarioBase, double ventasRealizadas, double porcentajeBono) {
             super(nombre, apellido, dpi, salarioBase);
             this.ventasRealizadas = ventasRealizadas;
             this.porcentajeBono = porcentajeBono;

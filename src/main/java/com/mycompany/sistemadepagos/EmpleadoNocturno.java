@@ -10,7 +10,7 @@ public class EmpleadoNocturno extends Persona {
         this.bonoHoraNocturna = 0.0;
 }
         
-        public EmpleadoNocturno(String nombre, String apellido, int dpi, double salarioBase, int horasNocturnas, double bonoHoraNocturna) {
+        public EmpleadoNocturno(String nombre, String apellido, String dpi, double salarioBase, int horasNocturnas, double bonoHoraNocturna) {
             super(nombre, apellido, dpi, salarioBase);
             this.horasNocturnas = horasNocturnas;
             this.bonoHoraNocturna = bonoHoraNocturna;

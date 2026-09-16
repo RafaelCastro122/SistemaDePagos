@@ -10,7 +10,7 @@ package com.mycompany.sistemadepagos;
         this.valorHoraExtra = 0.0;
 }
         
-        public EmpleadoAdministrativo(String nombre, String apellido, int dpi, double salarioBase, int horasExtra, double valorHoraExtra) {
+        public EmpleadoAdministrativo(String nombre, String apellido, String dpi, double salarioBase, int horasExtra, double valorHoraExtra) {
             super(nombre, apellido, dpi, salarioBase);
             this.horasExtra = horasExtra;
             this.valorHoraExtra = valorHoraExtra;

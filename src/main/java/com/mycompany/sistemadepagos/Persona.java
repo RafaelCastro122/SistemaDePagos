@@ -3,17 +3,17 @@ package com.mycompany.sistemadepagos;
 public abstract class Persona {
     public String nombre;
     public String apellido;
-    public int dpi;
+    public String dpi;
     public double salarioBase;
     
     public Persona() {
         this.nombre = "";
         this.apellido = "";
-        this.dpi = 0;
+        this.dpi = "";
         this.salarioBase = 0.0;
     }
     
-    public Persona(String nombre, String apellido, int dpi, double salarioBase) {
+    public Persona(String nombre, String apellido, String dpi, double salarioBase) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dpi = dpi;
@@ -36,11 +36,11 @@ public abstract class Persona {
         this.apellido = apellido;
     }
     
-    public int getDpi() {
+    public String getDpi() {
         return dpi;
     }
     
-    public void setDpi(int dpi) {
+    public void setDpi(String dpi) {
         this.dpi = dpi;
     }
     

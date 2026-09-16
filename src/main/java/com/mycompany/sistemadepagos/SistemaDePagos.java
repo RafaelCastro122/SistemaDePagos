@@ -7,7 +7,6 @@ public class SistemaDePagos {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        // Arreglo para almacenar los 3 empleados
         Persona[] empleados = new Persona[3];
         
         System.out.println("**************************************");
@@ -39,10 +38,17 @@ public class SistemaDePagos {
                 String apellido = scanner.nextLine();
                 
                 System.out.print("DPI: ");
-                int dpi = scanner.nextInt();
+                String dpi = scanner.nextLine();
                 
-                System.out.print("Salario base: ");
-                double salarioBase = scanner.nextDouble();
+                double salarioBase;
+                do {
+                    System.out.print("Salario base (mayor a 0): ");
+                    salarioBase = scanner.nextDouble();
+
+                    if (salarioBase <= 0) {
+                        System.out.println("Error: El salario base debe ser mayor a cero. Intente de nuevo.");
+                    }
+                } while (salarioBase <= 0);
                 
                 if (opcion == 1) {
                     System.out.print("Horas extras: ");
